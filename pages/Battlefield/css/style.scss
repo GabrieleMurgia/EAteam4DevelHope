@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    .nav1{
+        height: 40px;
+        border: 1px solid black;
+        background-color: #282828;
+        svg{
+            height: 18px;
+            width: 18px;
+        }
+    }
+    .nav2{
+        height:60px;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 20px;
+        .nav-flex-left{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                padding-right: 35px;
+            }
+            div{
+                margin: 0 13px;
+                font-family: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif;
+                font-weight: bold;
+            }
+            
+        }
+        .nav-flex-right{
+            span{
+                font-size: 18px;
+                font-family: TT Hoves W05 Regular, sans-serif;
+                background-color: #26ffdf;
+                color: black;
+                padding: 13px 35px;
+                
+            }
+        }
+    }
+}
+main{
+    height: 100vh;
+    background-color: black;
+    .section1{
+        background-color:black;
+        background-image:url(img/Sfondo1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        border: 1px solid white;
+    }
+    .section2{
+        height: 200px;
+        border: 1px solid white;
+    }
+    .section3{
+        height: 200px;
+        border: 1px solid white;
+    }
+    .section4{
+        height: 200px;
+        border: 1px solid white;
+    }
+    .section5{
+        height: 200px;
+        border: 1px solid white;
+    }
+}
