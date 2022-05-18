@@ -114,12 +114,84 @@ main{
         background-repeat: no-repeat;
         width: 100%;
         height: 75%;
+        padding: 150px 450px;
+        .flex-section2{
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            font-family: 'BF_Modernista-Bold', sans-serif;
+            font-weight: 700;
+            font-size: 72px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 24px;
+            font-family:'TT Hoves W05 Regular', sans-serif ;
+            color: white;
+            margin-bottom: 30px;
+
+        }
+        div{
+            font-size: 18px;
+            font-family:'TT Hoves W05 Regular', sans-serif ;
+            background-color: #26ffdf;
+            padding: 15px 30px;
+            margin-bottom: 10px;
+            margin-bottom: 150px;
+        }
+        h3{
+            color: white;
+            font-size: 54px;
+        }
+    }
     }
     .section3{
         background-color: black;
         height: 90%;
         border: 1px solid white;
         height: 80%;
+        .card-section{
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            bottom: 50px;
+            padding:  0px 80px;
+            img{
+                width: 32%;
+            }
+            div{
+
+            }
+        }
+        .text-card-section{
+            display: flex;
+            color: white;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 0px 100px;
+            div{
+                border: 1px solid white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            h5{
+                font-size: 28.8px;
+            }
+            p{
+                font-size: 18px;
+            }
+            .text-card1{
+
+            }
+            .text-card2{
+                
+            }
+        }
     }
     .section4{
         background-image:url(../img/sfondo4.jpg);
