@@ -4,12 +4,18 @@
     padding: 0;
 }
 header{
+    .hamburger-menu{
+        padding:0px;
+        width: 1px;
+        
+    }
     .nav1{
         display: flex;
         justify-content: flex-end;
         height: 40px;
         border: 1px solid black;
         background-color: #181818;
+        
         .logo-profile-nav{
             width: 20px;
         }
@@ -46,17 +52,24 @@ header{
                 margin: 0 13px;
                 font-family: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif;
                 font-weight: 600;
+                font-size: 1vw;
+            }
+            span{
+                
             }
             
         }
         .nav-flex-right{
             span{
-                font-size: 18px;
+                font-size:calc(14px + 0.2vw);
                 font-family: TT Hoves W05 Regular, sans-serif;
                 background-color: #26ffdf;
                 color: black;
                 padding: 13px 35px;
-                
+
+                .space{
+                    padding: 2px;
+                }
             }
         }
     }
@@ -69,6 +82,7 @@ main{
         background-repeat: no-repeat;
         width: 100%;
         height: 75%;
+  
 
         padding-left: 80px;
         padding-top:200px;
@@ -113,7 +127,8 @@ main{
         background-repeat: no-repeat;
         width: 100%;
         height: 75%;
-        padding: 150px 450px;
+
+        
         .flex-section2{
             display: flex;
         flex-direction: column;
@@ -565,4 +580,22 @@ main{
     }
     
   
+}
+
+
+//Media query
+@media only screen and (max-width: 1030px) {
+   
+   .nav-flex-left{
+       div{
+           display: none;
+       }
+   }
+   .hamburger-menu{
+        display: initial;
+        width: 20px !important;
+        filter: brightness(0) invert(1);
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
 }

@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+header .hamburger-menu {
+  padding: 0px;
+  width: 1px;
+}
+
 header .nav1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,14 +78,19 @@ header .nav2 .nav-flex-left div {
   margin: 0 13px;
   font-family: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif;
   font-weight: 600;
+  font-size: 1vw;
 }
 
 header .nav2 .nav-flex-right span {
-  font-size: 18px;
+  font-size: calc(14px + 0.2vw);
   font-family: TT Hoves W05 Regular, sans-serif;
   background-color: #26ffdf;
   color: black;
   padding: 13px 35px;
+}
+
+header .nav2 .nav-flex-right span .space {
+  padding: 2px;
 }
 
 main {
@@ -153,7 +163,6 @@ main .section2 {
   background-repeat: no-repeat;
   width: 100%;
   height: 75%;
-  padding: 150px 450px;
 }
 
 main .section2 .flex-section2 {
@@ -827,5 +836,19 @@ main .loghi-immagini .pegi6 img {
 
 main .loghi-immagini img {
   width: 60px;
+}
+
+@media only screen and (max-width: 1030px) {
+  .nav-flex-left div {
+    display: none;
+  }
+  .hamburger-menu {
+    display: initial;
+    width: 20px !important;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
