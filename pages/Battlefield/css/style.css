@@ -84,7 +84,6 @@ header .nav2 .nav-flex-right span {
 }
 
 main {
-  height: 100vh;
   background-color: black;
 }
 
@@ -94,7 +93,6 @@ main .section1 {
   background-repeat: no-repeat;
   width: 100%;
   height: 75%;
-  border: 1px solid white;
   padding-left: 80px;
   padding-top: 200px;
 }
@@ -150,7 +148,6 @@ main .section1 .text-area-1 .buttons-section-1 .button2-section-1 {
 
 main .section2 {
   height: 200px;
-  border: 1px solid white;
   background-image: url(../img/Sfondo2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -207,8 +204,7 @@ main .section2 .flex-section2 h3 {
 main .section3 {
   background-color: black;
   height: 90%;
-  border: 1px solid white;
-  height: 80%;
+  height: 100rem;
 }
 
 main .section3 .card-section {
@@ -242,7 +238,6 @@ main .section3 .text-card-section {
 }
 
 main .section3 .text-card-section div {
-  border: 1px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,9 +248,7 @@ main .section3 .text-card-section div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 30vh;
 }
 
 main .section3 .text-card-section h5 {
@@ -266,13 +259,203 @@ main .section3 .text-card-section p {
   font-size: 18px;
 }
 
+main .section3 .text-card-section .text-card1 {
+  width: 33%;
+}
+
+main .section3 .text-card-section .text-card2 {
+  width: 33%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .section3 .text-card-section .text-card3 {
+  width: 33%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .section3 .text-card-section button {
+  padding: 16px 24px;
+  font-size: 18px;
+  border: none;
+}
+
+main .section3 .section3-bottom .card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  margin-top: 170px;
+}
+
+main .section3 .section3-bottom .card-bottom img {
+  width: 100%;
+}
+
+main .section3 .section3-bottom .card-bottom .card-top {
+  width: 100%;
+}
+
+main .section3 .section3-bottom .card-bottom .left-title-blue {
+  color: #26ffdf;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+main .section3 .section3-bottom .card-bottom .right-title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+main .section3 .section3-bottom .card-bottom h3 {
+  font-family: TT Hoves W05 Regular, sans-serif;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+main .section3 .section3-bottom .card-bottom p {
+  font-family: TT Hoves W05 Regular, sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+main .section3 .section3-bottom .card-bottom .card-1 {
+  height: 420px;
+  width: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .section3 .section3-bottom .card-bottom .card-1 .card1-bottom {
+  background-color: white;
+  height: 100%;
+  padding: 20px;
+}
+
+main .section3 .section3-bottom .card-bottom .card-2 {
+  height: 420px;
+  width: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .section3 .section3-bottom .card-bottom .card-2 .card2-bottom {
+  background-color: white;
+  height: 100%;
+  padding: 20px;
+}
+
+main .section3 .section3-bottom .card-bottom .card-3 {
+  height: 420px;
+  width: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .section3 .section3-bottom .card-bottom .card-3 .card3-bottom {
+  background-color: white;
+  height: 100%;
+  padding: 20px;
+}
+
+main .section3 .carica-altro {
+  border: 1px solid white;
+  width: 60%;
+  height: 100px;
+  margin-top: 100px;
+  margin-left: 380px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+main .section3 .carica-altro p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+main .section3 .carica-altro .plus-sign {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 40px;
+  margin-bottom: 10px;
+}
+
 main .section4 {
   background-image: url(../img/sfondo4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 55%;
-  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .section4 h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 54px;
+  margin-bottom: 10px;
+}
+
+main .section4 h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+main .section4 button {
+  border: none;
+  font-size: 18px;
+  padding: 16px 24px;
 }
 
 main .section5 {
@@ -281,6 +464,368 @@ main .section5 {
   background-repeat: no-repeat;
   width: 100%;
   height: 40%;
-  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .section5 h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+main .section5 h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+main .section5 button {
+  border: none;
+  font-size: 18px;
+  padding: 16px 24px;
+}
+
+main .section6 {
+  height: 650px;
+  background-image: url(../img/sfondo6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .section6 .section6-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .section6 h3 {
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+main .section6 span {
+  padding: 12px 24px;
+  background-color: #f3f3f3;
+  color: black;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 3%;
+  margin-top: 20px;
+}
+
+main .section6 .section6-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section6 .section6-bottom .section6-bottom-left {
+  width: 45%;
+}
+
+main .section6 .section6-bottom .section6-bottom-left h2 {
+  font-size: 38px;
+}
+
+main .section6 .section6-bottom .section6-bottom-left p {
+  font-size: 18px;
+}
+
+main .footer {
+  background-image: url(../img/SfondeiGrigio.png);
+  background-size: contain;
+  height: 60vh;
+}
+
+main .footer .footer1 {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 90px;
+}
+
+main .footer .footer1 .line-1 {
+  width: 1100px;
+  border-bottom: 1px solid #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .footer .footer1 .line-2 {
+  width: 1100px;
+  border-bottom: 1px solid #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .footer .footer1 .line-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1100px;
+  border-bottom: 1px solid #f9f9f9;
+  line-height: 50px;
+}
+
+main .footer .footer1 .line-3 .bottom-line-3-sx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .footer .footer1 .line-3 .bottom-line-3-sx ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .footer .footer1 .line-3 .bottom-line-3-sx ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+main .footer .footer1 .line-3 .bottom-line-3-sx ul li a {
+  text-decoration: none;
+  color: #878787;
+}
+
+main .footer .footer1 .line-3 .bottom-line-3-dx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 70px;
+  gap: 15px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+main .footer .footer1 .line-3 .bottom-line-3-dx .svg {
+  margin: 20x;
+}
+
+main .footer .footer1 .line-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  width: 1100px;
+}
+
+main .footer .footer1 .line-4 .loghi-scritte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+main .footer .footer1 .line-4 .loghi-scritte .ripple {
+  width: 150px;
+}
+
+main .Electronic-Arts {
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  margin-left: 400px;
+}
+
+main .footer2 {
+  height: 30vh;
+  background-color: #181818;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #878787;
+}
+
+main .footer2 .dx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  right: 200px;
+}
+
+main .footer2 .ea-logo {
+  margin-top: 30px;
+}
+
+main .footer2 .sx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  margin-top: 30px;
+  line-height: 20px;
+}
+
+main .footer2 .grid-ea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .footer2 span {
+  font-size: 16px;
+}
+
+main .footer2 .footer2-grid1 {
+  font-size: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+main .footer2 .span-footer-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+  width: 600px;
+}
+
+main .footer2 .span-footer-left span {
+  font-size: 14px;
+}
+
+main .footer2 .span-footer-left .cookie-pref {
+  margin-left: 20px;
+}
+
+main .loghi-immagini {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  right: 20;
+}
+
+main .loghi-immagini .pegi6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-bottom: 2px solid white;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+main .loghi-immagini .pegi6 img {
+  width: 45px;
+}
+
+main .loghi-immagini img {
+  width: 60px;
 }
 /*# sourceMappingURL=style.css.map */
