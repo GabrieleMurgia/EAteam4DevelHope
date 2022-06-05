@@ -130,35 +130,39 @@ main{
 
         
         .flex-section2{
+            position: relative;
+            top:150px;
             display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         h2{
             font-family: 'BF_Modernista-Bold', sans-serif;
             font-weight: 700;
-            font-size: 72px;
+            font-size: 4.2vw;
             color: white;
             margin-bottom: 10px;
         }
         p{
-            font-size: 24px;
+            font-size: calc(6px + 1vw);
             font-family:'TT Hoves W05 Regular', sans-serif ;
             color: white;
             margin-bottom: 30px;
-
+            text-align: center;
+            width: 60%;
+            line-height:calc(6px + 1.5vw);
         }
         div{
             font-size: 18px;
             font-family:'TT Hoves W05 Regular', sans-serif ;
             background-color: #26ffdf;
             padding: 15px 30px;
-            margin-bottom: 10px;
-            margin-bottom: 150px;
+            margin-bottom: 3.5vw;
         }
         h3{
             color: white;
-            font-size: 54px;
+            font-size: calc(25px + 1.6vw);
+            font-weight: bold;
         }
     }
     }
@@ -694,4 +698,23 @@ main{
             }
         }
     }
+}
+@media only screen and (max-width: 1014px) {
+    .section3{
+        background-color: black;
+        height: 90%;
+
+        height: 100rem;
+        .card-section{
+            display: flex;
+            flex-flow:wrap;
+            justify-content: space-evenly;
+            position: relative;
+            bottom: 50px;
+            padding:  0px 80px;
+           
+        }
+      
+       
+}
 }
