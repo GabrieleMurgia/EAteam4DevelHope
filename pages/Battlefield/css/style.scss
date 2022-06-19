@@ -1,3 +1,5 @@
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,8 +8,7 @@
 header{
     .hamburger-menu{
         padding:0px;
-        width: 1px;
-        
+        width: 1px; 
     }
     .nav1{
         display: flex;
@@ -54,9 +55,6 @@ header{
                 font-weight: 600;
                 font-size: 1vw;
             }
-            span{
-                
-            }
             
         }
         .nav-flex-right{
@@ -92,6 +90,8 @@ main{
             align-items: center;
             justify-content: center;
             width: 45%;
+            position: relative;
+            bottom: 100px;
             img{
                 width: 25vw;
             }
@@ -120,15 +120,11 @@ main{
         }
     }
     .section2{
-        height: 200px;
-
+        height: 41rem;
         background-image:url(../img/Sfondo2.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 75%;
-
-        
         .flex-section2{
             position: relative;
             top:150px;
@@ -169,16 +165,83 @@ main{
     .section3{
         background-color: black;
         height: 90%;
-
         height: 100rem;
         .card-section{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             position: relative;
             bottom: 50px;
             padding:  0px 80px;
+            color: #f3f3f3;
             img{
-                width: 32%;
+                width: 100%;
+            }
+            p{
+               text-align: center;
+                font-size: 18px;
+                width: 20vw;
+                position: relative;
+                right: 120px;
+                line-height: 25px;
+                margin-bottom: 30px;
+            }
+            h5{
+                font-size: 28.8px;
+                width: 20vw;
+                position: relative;
+                right: 100px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            .card1{
+                padding: 1%;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               
+                .text-card1{
+                    width: 33%;
+                }
+            }
+            .card2{
+                padding: 1%;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+             
+                .text-card2{
+                    width: 33%;
+                    justify-content: space-between;
+                }
+                button{
+                    padding: 10px 24px;
+                    width: 200px;
+                    font-size: 18px;
+                    border: none;
+                    position: relative;
+                    right: 20px
+                }
+            }
+            .card3{
+                width: 50%;
+                padding: 1%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .text-card3{
+                    width: 33%;
+                    justify-content: space-between;
+                }
+                button{
+                    padding: 10px 24px;
+                    width: 260px;
+                    font-size: 18px;
+                    border: none;
+                    position: relative;
+                    right: 50px
+                }
             }
            
         }
@@ -202,22 +265,8 @@ main{
             p{
                 font-size: 18px;
             }
-            .text-card1{
-                width: 33%;
-            }
-            .text-card2{
-                width: 33%;
-                justify-content: space-between;
-            }
-            .text-card3{
-                width: 33%;
-                justify-content: space-between;
-            }
-            button{
-                padding: 16px 24px;
-                font-size: 18px;
-                border: none;
-            }
+            
+            
         }
         .section3-bottom{
 
@@ -260,7 +309,7 @@ main{
 
                 .card-1{
                     height: 420px;
-                    width: 18%;
+                    width: 350px;
                     display: flex;
                     flex-direction: column;
 
@@ -272,7 +321,7 @@ main{
                 }
                 .card-2{
                     height: 420px;
-                    width: 18%;
+                    width: 350px;
                     display: flex;
                     flex-direction: column;
 
@@ -284,7 +333,7 @@ main{
                 }
                 .card-3{
                     height: 420px;
-                    width: 18%;
+                    width: 350px;
                     display: flex;
                     flex-direction: column;
 
@@ -335,12 +384,12 @@ main{
         h1{
             color: white;
             text-transform: uppercase;
-            font-size: 54px;
+            font-size:calc(16px + 2vw);
             margin-bottom: 10px;
         }
         h2{
             color: white;
-            font-size: 24px;
+            font-size:calc(8px + 1vw);
             margin-bottom: 10px;
         }
         button{
@@ -348,6 +397,12 @@ main{
             font-size: 18px;
             padding: 16px 24px;
         }
+    }
+    .section5-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       // margin-bottom: 120px;
     }
     .section5{
         background-image:url(../img/sfondo5.jpg);
@@ -359,15 +414,16 @@ main{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+       
         h1{
             color: white;
             text-transform: uppercase;
-            font-size: 40px;
+            font-size:calc(12px + 2vw);
             margin-bottom: 10px;
         }
         h2{
             color: white;
-            font-size: 24px;
+            font-size:calc(8px + 1vw);
             margin-bottom: 10px;
         }
         button{
@@ -376,25 +432,22 @@ main{
             padding: 16px 24px;
         }
     }
-    .section6{
-        height: 650px;
-        background-image:url(../img/sfondo6.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: white;
+    .section6-top2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .section6-top{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        .section6-top{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-        }
+        height: 17rem;
+        justify-content: flex-end;
+    
         h3{
             font-size: 36px;
             margin-bottom: 35px;
+            color: white;
         }
         span{
             padding: 12px 24px;
@@ -405,16 +458,33 @@ main{
             border-radius: 3%;
             margin-top: 20px;
         }
+    }
+    .section6{
+        height: 550px;
+        background-image:url(../img/sfondo6.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      
+        
+      
         .section6-bottom{
             display: flex;
             width: 70%;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-flow: wrap;
             .section6-bottom-left{
                 width: 45%;
+                margin-right: 150px;
                 h2{
                     font-size: 38px;
+                    margin-bottom: 30px;
                 }
                 p{
                     font-size: 18px;
@@ -425,8 +495,6 @@ main{
     .footer{
         background-image:url(../img/SfondeiGrigio.png);
         background-size: contain;
-        height: 60vh;
-    
         .footer1{
             color:white;
             display: flex;
@@ -434,33 +502,28 @@ main{
             align-items: center;
             flex-direction: column;
             line-height: 90px;
-            
-            div{
-                
-               
-            }
             .line-1{
-                width: 1100px;
-                border-bottom: 1px solid #f9f9f9;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                line-height: 40px;
+                padding: 30px 80px 40px 80px;
+                text-decoration-line: underline;
+                text-underline-offset: 48px;
             }
             .line-2{
-                width: 1100px;
-                border-bottom: 1px solid #f9f9f9;
-                display: flex;
-            justify-content: center;
-            align-items: center;
+                line-height: 40px;
+                padding: 30px 80px 40px 80px;
+                font-size: 13.5px;
+                font-weight: bold;
+                text-decoration-line: underline;
+                text-underline-offset: 48px;
             }
            
             .line-3{
                 display: flex;
-                flex-direction: row;
                 justify-content:space-between;
-                width: 1100px;
                 border-bottom:  1px solid #f9f9f9;
                 line-height: 50px;
+                flex-flow: wrap;
+                padding: 20px 0px;
                 .bottom-line-3-sx {
                     display: flex;
 
@@ -487,17 +550,21 @@ main{
                         margin: 20x;
                     }
                 }
+                .line-3-bottom{
+                    margin-left: 13vw;
+                }
                 
             }
             .line-4{
                 display: flex;
                 justify-content: space-between;
                 margin-top: 20px;
-                width: 1100px;
-               
+                flex-flow: wrap;
+                padding: 30px 0px;
                 .loghi-scritte{
                     display: flex;
                     gap:20px;
+                    flex-flow: wrap;
                     .ripple{
                         width: 150px;
                     }
@@ -506,21 +573,24 @@ main{
         }  
     }
     .Electronic-Arts{
-        align-self: self-start;
-        margin-left: 400px;
+        align-self: center;
+        position: relative;
+        right: 400px;
+        
     }
     .footer2{
-        height: 30vh;
+        height: 320px;
         background-color: #181818;  
         display: flex;
-        justify-content: center;
         color:#878787;
         .dx{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             position: relative;
-            right: 200px;
+            left: 35vw;
+            bottom: 3vw; 
+            width: 38%;
         }
         .ea-logo{
             margin-top: 30px;
@@ -551,6 +621,8 @@ main{
             grid-template-rows:1fr 1fr;
             row-gap: 20px;
             width: 600px;
+            position: relative;
+            bottom: 2vw;
             span{
                 font-size: 14px;
             }
@@ -561,12 +633,10 @@ main{
         }
     } 
     .loghi-immagini{
-        width: 200px;
         display: flex;
         align-items: flex-start;
         gap:10px;
-        position: relative;
-    right: 20;
+        margin-left: 5vw;
         .pegi6{
             display: flex;
             flex-direction: row;
@@ -585,136 +655,15 @@ main{
     
   
 }
-
-
-//Media query
-@media only screen and (max-width: 1030px) {
-   
-   .nav-flex-left{
-       div{
-           display: none;
-       }
-   }
-   .hamburger-menu{
-        display: initial;
-        width: 20px !important;
-        filter: brightness(0) invert(1);
-        margin-bottom: 5px;
-        margin-right: 5px;
-    }
-
-    .text-area-1{
-        flex-direction: column;
-        position: relative!important;
-        bottom: 70px!important;
-        img{
-            width:300px !important;
-        }
-        h6{
-            font-size: 16px !important;
-            line-height: 20px;
-            width: 300px;
-        }
-        .buttons-section-1{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 300px;
-            .button1-section-1{
-                background-color: #ff0000;
-                padding: 20px 53px !important;
-                margin-bottom: 20px;
-            }
-            .button2-section-1{
-                margin-left: 0!important;
-            }
-        }
-    }
+.container{
+    display: flex;
+    justify-content: space-between;
+    width:75%;
+    margin-left: 22%;
+    flex-wrap: wrap;
+}
+.container-sx{
+    display: flex;
 }
 
-@media only screen and (max-width: 767px) {
-    .section1{
-        background-image:url(../img/RESPONSIVE/Section1.jpg) !important;
-        background-size:percentage($number: 1)!important;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%!important;
-    }
-    .text-area-1{
-        flex-direction: column;
-        top: 330px!important;
-        left: 150px;
-        img{
-           display: none;
-        }
-        h6{
-            font-size: 20px !important;
-            line-height: 20px;
-            width: 200%;
-        }
-        .buttons-section-1{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 300px;
-            .button1-section-1{
-                background-color: #ff0000;
-                padding: 20px 53px !important;
-                margin-bottom: 20px;
-            }
-            .button2-section-1{
-                margin-left: 0!important;
-            }
-        }
-    }
-}
 
-@media only screen and (max-width: 617px) {
-    .section1{
-        display: flex;
-        justify-content: center;
-        
-    }
-    .text-area-1{
-        width: 600px;
-        position: static!important;
-        margin-top: 150px;
-        margin-right: 100px;
-        h6{
-          position:static;
-          text-align: center;
-        }
-        .buttons-section-1{
-            position:static;
-            .button1-section-1{
-              width: 100%;
-              display: flex;
-              justify-content: center;
-            }
-            .button2-section-1{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-            }
-        }
-    }
-}
-@media only screen and (max-width: 1014px) {
-    .section3{
-        background-color: black;
-        height: 90%;
-
-        height: 100rem;
-        .card-section{
-            display: flex;
-            flex-flow:wrap;
-            justify-content: space-evenly;
-            position: relative;
-            bottom: 50px;
-            padding:  0px 80px;
-           
-        }
-      
-       
-}
-}
