@@ -1,8 +1,52 @@
 //Media query
+@media only screen and (max-width: 1870px) {
+   .section6-bottom{
+    .section6-bottom-sx{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section6-bottom-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        
+    }
+    p{
+       
+    }
+   }
+}
+
+@media only screen and (max-width: 1250px) {
+    header .nav2 .nav-flex-left img {
+        padding-right: 0px;
+    }
+}
 @media only screen and (max-width: 1200px) {
+    .up{
+        position: relative;
+        bottom: 10px;
+    }
     .container{
         margin-left: 7vw!important;
     }
+    .section3{
+        height: 100rem!important; ;
+    }
+    }
+    @media only screen and (max-width: 1100px) {
+        .section3{
+            height: 120rem!important; ;
+        }
+        .up{
+            position: relative;
+            bottom: 15px;
+        }
     }
     @media only screen and (max-width: 1030px) {
         .Electronic-Arts{
@@ -14,6 +58,9 @@
         justify-content: flex-start!important;
         align-items: flex-start!important;
         width: 100vw!important;
+        .section6-bottom-right{
+            padding-left: 15vw;
+        }
         .section6-bottom-left{
             
             h2{
@@ -76,6 +123,14 @@
     
     
     @media only screen and (max-width: 1014px) {
+        .card1-bottom{
+            padding: 6px!important;
+        }
+        .span-footer-right{
+            img{
+                position: static!important;;
+            }
+        }
         .section3{
             height: 150rem!important;
             .card-section{
@@ -110,6 +165,9 @@
             }
           }
           .card3{
+            position: relative!important;
+            top: 30px!important;
+            }
             button{
                 right:100px!important;
                   }
@@ -117,8 +175,7 @@
     }
     
     .carica-altro {
-       
-        width: 90%!important;
+        
         margin: 49px 50px !important;
     }
        
@@ -183,6 +240,7 @@
     }
     
     @media only screen and (max-width: 767px) {
+       
         .sfondo-fantasma{
             margin-bottom: 400px;
         }
@@ -197,7 +255,7 @@
         .section3 {
              background-color: black;
               height: 90%;
-               height: 100rem!important;
+               height: 110rem!important;
             }
         .section1{
             background-image:url(../img/RESPONSIVE/Section1.jpg) !important;
@@ -295,7 +353,45 @@
             
         }
     }
-    @media only screen and (max-width: 715px) {
+    @media only screen and (max-width: 716px) {
+            .conditions{
+                padding: 8px 67px;
+            }
+        .select.email{
+            margin-left: 5vw!important;
+       }
+        .section6-bottom{
+            .section6-bottom-right{
+                padding: 0px!important;
+                form{
+                    width: 100vw;
+                    .inputs{
+
+                        .select.email{
+                            position: static!important;
+                             width: 90vw;
+                           
+                        }
+                        .input-date-country{
+                            flex-direction: column!important;
+                            .select{
+                                width: 90vw;
+                                .spik{
+                                    gap: 421px;
+                                }
+                            }
+                        }
+                       
+                    }
+
+                }
+                .conditions{
+                    span{
+                        font-size: 1.5vw!important;
+                    }
+                }
+            }
+        }
         .section3{
            display: flex;
            flex-direction: column;
@@ -372,7 +468,7 @@
                 width: 100%;
             }
             p{
-                width: 20vw!important;
+                width: 50vw!important;
                 position: static!important;
             }
             h5{
@@ -383,7 +479,10 @@
                 right:400px;
                 position: static;
             }
-         
+            
+    }
+    .section6-bottom-right{
+        padding-left: 5vw!important;
     }
     }
     @media only screen and (max-width: 639px) {
@@ -410,9 +509,8 @@
                     line-height: 10px;
                    }
             }
-        
-    
-    }
+            
+
     @media only screen and (max-width: 617px) {
         .bottom-line-3-sx ul {
              width:100%!important;
@@ -476,4 +574,31 @@
     }
     
     
-    }
+    @media only screen and (max-width: 525px) {
+        .select.email{
+            margin-left: 1vw!important;
+        }
+        .chose-lang{
+            position: relative;
+            right: 100px;
+        }
+        .span-footer-left{
+            position: relative!important;
+            right: 100px!important;
+        }
+        .container{
+            padding-left: 0px!important;
+            padding-right: 0px!important;
+        }
+        .sx{
+            margin-left: 0px!important;
+        }
+        .conditions{
+            width:99%;
+            padding: 0px 50px
+        }
+        form{
+            padding: 20px;
+        }
+    }   
+}
