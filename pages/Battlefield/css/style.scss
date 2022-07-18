@@ -631,6 +631,12 @@ main{
             }
         }
     }
+    .formatting-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .footer{
         background-image:url(../img/SfondeiGrigio.png);
         background-size: contain;
@@ -644,16 +650,16 @@ main{
             .line-1{
                 line-height: 40px;
                 padding: 30px 80px 40px 80px;
-                text-decoration-line: underline;
-                text-underline-offset: 48px;
+                width: 100%;
+                border-bottom: 1px solid white;
             }
             .line-2{
                 line-height: 40px;
                 padding: 30px 80px 40px 80px;
                 font-size: 13.5px;
                 font-weight: bold;
-                text-decoration-line: underline;
-                text-underline-offset: 48px;
+                border-bottom: 1px solid white;
+                width: 100%;
             }
            
             .line-3{
@@ -663,6 +669,7 @@ main{
                 line-height: 50px;
                 flex-flow: wrap;
                 padding: 20px 0px;
+                width: 100%;
                 .bottom-line-3-sx {
                     display: flex;
 
@@ -708,6 +715,7 @@ main{
                 margin-top: 20px;
                 flex-flow: wrap;
                 padding: 30px 0px;
+                width: 100%;
                 .loghi-scritte{
                     display: flex;
                     gap:20px;
@@ -1056,7 +1064,6 @@ main{
     border: 2px solid  #878787;
      padding: 10px 20px;
      min-width: 160px;
-     border-top:3px solid #181818;
      position: relative;
      bottom: -1px;
      &:hover{
@@ -1112,12 +1119,15 @@ main{
         }
     }
 }
-.upper-lang.first-lang{
+.hide{
     display: none;
+}
+.upper-lang.first-lang{
+    
 }
 .upper-lang.second-lang{
     right: -163px!important;;
-    display: none;
+    
 }
 .conditions{
     width: 570px;

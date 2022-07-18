@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaQueries.css">
+    <link rel="stylesheet" href="css/events.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Battlefield-2042 sparatutto in prima persona di ultima generazione</title>
@@ -331,6 +332,7 @@
             </div>
         </div>
         <div class="footer">
+            <div class="formatting-footer">
             <div class="footer1">
                 <div class="line-1">
                     *Xbox One e PlayStation®4 supportano 64 giocatori. 128 giocatori e mappe su larga scala sono disponibili su Xbox Series X|S, PC e PlayStation®®5.
@@ -392,6 +394,7 @@
                 <span class="Electronic-Arts">© 2022 Electronic Arts Inc.</span>
             </div>
         </div>
+        </div>
 
         <div class="footer2">
 
@@ -411,8 +414,8 @@
             <div class="container-dx">
                 <div class="dx">
                     <div class="chose-lang">
-                  <div>
-                    <div class="upper-lang first-lang">
+                  <div class="button-and-lang1">
+                    <div class="upper-lang first-lang" id="hide" >
                         <div class="column-lang">
                             <span>Austria</span><span>Belgio</span><span>Bulgaria</span><span>Croazia</span><span>Cipro</span><span>Repubblica Ceca</span><span>Danimarca</span><span>Estonia</span><span>Finlandia</span>
                         </div>
@@ -426,13 +429,13 @@
                             <span>Spagna</span><span>Svezia</span><span>Svizzera</span>
                         </div>
                     </div>
-                    <div class="lang">
+                    <div class="lang" id="button-region">
                         <span>Prezzi per regione</span>
                         <div class="spik"><span class="lighter-color-gray">italia</span><span class="container-arrow"><div class="arrow"></div></span></div>
                     </div>
                   </div>
-                  <div>
-                  <div class="upper-lang second-lang">
+                  <div class="button-and-lang2">
+                  <div class="upper-lang second-lang" id="hide" >
                     <div class="column-lang">
                         <span>UNITED STATES</span><span>DEUTSCHLAND</span><span>UNITED KINGDOM</span><span>AUSTRALIA</span><span>FRANCE</span><span>POLSKA</span><span>ESPAÑA</span><span>РОССИЯ</span><span>日本</span>
                     </div>
@@ -441,7 +444,7 @@
                     </div>
                     
                 </div>
-                    <div class="lang">
+                    <div class="lang" id="button-language">
                         <span>Lingua</span>
                         <div class="spik"><span class="lighter-color-gray">ITALIA </span><span class="container-arrow"><div class="arrow"></div></span></div>
                     </div>
@@ -475,6 +478,6 @@
 
    
     
-
+<script src="js/script.js"></script>
 </body>
 </html>
