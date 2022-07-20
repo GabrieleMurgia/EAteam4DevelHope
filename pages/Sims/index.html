@@ -1,11 +1,493 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+  <nav id="navbar">
+    <div id="blackbar"></div>
+    <div class="whiteMenuBar">
+      <div class="wrapperLogoMenu">
+
+        <!-- hamburger menu -->
+        <div id="openMenu" onclick="apriMenu()">
+          <div class="littleBar"></div>
+          <div class="littleBar"></div>
+          <div class="littleBar"></div>
+        </div>
+        <div id="wrapperMenu" class="chiudiMenu">
+          <!-- qui va il contenuto del hamburger menu -->
+
+          <div id="grayBar">
+            <img class="eapl-local-nav__drawer-home-logo"
+              src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/brand-refresh-assets/common/ts4-nav-logo-blue-refresh.svg">
+            <div id="chiudi" onclick="chiudiMenu()">
+              <img id="chiudiX" src="https://img.icons8.com/sf-ultralight/100/000000/xbox-x.png" />
+            </div>
+          </div>
+          <ul>
+            <li class="listaMenu">PANORAMICA</li>
+            <li class="listaMenu">NOTIZIE E CONTENUTI MULTIMEDIALI</li>
+            <li class="listaMenu">PACCHETTI</li>
+            <li class="listaMenu">SUGGERIMENTI E TRUCCHI DI GIOCO</li>
+            <li class="listaMenu">COSE DA PROVARE</li>
+            <li class="listaMenu">COMUNITA</li>
+
+          </ul>
+
+        </div>
+        <div id="sfondo-hamburger" onclick="chiudiMenu()" class="chiudiMenu"></div>
+        <div class="logo">
+          <img src="assets/img/ts4-nav-logo-blue-refresh.svg" alt="">
+        </div>
+
+        <div class="menu">
+
+          <div class="panoramica">
+            <div class="rWrapper">
+              <div>PANORAMICA</div>
+              <div class="rhombus"></div>
+            </div>
+            <div class="wrapperPanor">
+              <div class="dropdownPanoramica">
+                <div class="panoram">
+                  <div>PANORAMICA</div>
+                  <a href="">Informazioni su The Sims</a>
+                </div>
+                <div class="domandeFrequenti">
+                  <div>DOMANDE FREQUENTI</div>
+                  <a href="">Domande frequenti sul gioco base</a>
+                  <a href="">Domande frequesti sul pacchetti</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="notizie">
+            <div class="rWrapper">
+              <div>NOTIZIE E MULTIMEDIALI</div>
+              <div class="rhombus"></div>
+            </div>
+            <div class="dropdownNotizie">
+              <div class="wrapperNotizie">
+                <a href="">Notizie e aggiornamenti</a>
+                <a href="">Contenuti Multimediali</a>
+                <a href=""> Iscrizione alla newsletter</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pacchetti">
+            <div class="rWrapper">
+              <div>PACCHETTI</div>
+              <div class="rhombus"></div>
+            </div>
+            <div class="dropdownPacchetti">
+              <div class="wrapperPacchetti">
+                <div class="infoPacchetti">
+                  <div>INFORMAZIONI SUI PACCHETTI</div>
+                  <a href="">Panoramica dei pacchetti</a>
+                </div>
+                <div class="tipiPacchetti">
+                  <div>TIPI DI PACCHETTO</div>
+                  <a href="">Crea la tua raccolta</a>
+                  <a href="">Expansion Pack</a>
+                  <a href="">Game Pack</a>
+                  <a href="">Staff Pack</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="suggerimenti">
+            <div class="rWrapper">
+              <div>SUGGERIMENTI E TRUCCHI</div>
+              <div class="rhombus"></div>
+            </div>
+            <div class="dropdownSuggerimenti">
+              <div class="wrapperSuggerimenti">
+                <a href="">Trucchi</a>
+                <a href="">Trucchi e consigli</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="daprovare">
+            <div class="rWrapper">
+              <div>COSE DA PROVARE</div>
+              <div class="rhombus"></div>
+            </div>
+            <div class="dropdownDaprovare">
+              <div class="wrapperDaprovare">
+                <a href="">Simulazioni</a>
+                <a href="">Quiz</a>
+                <a href="">Demo di "Crea un Sims"</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="comunita">
+            <div class="rWrapper">
+              <div>COMUNITA</div>
+              <div class="rhombus"></div>
+            </div>
+            <div class="wrapperComunita">
+              <div class="dropdownComunita">
+                <div class="comunita_comunita">
+                  <div>COMUNITA</div>
+                  <a href="">La Galleria</a>
+                  <a href="">Forum</a>
+                </div>
+                <div class="comunitaSocial">
+                  <div>SOCIAL</div>
+                  <a href="">Facebook</a>
+                  <a href="">You Tube</a>
+                  <a href="">Instagram</a>
+                  <a href="">Twitter</a>
+                  <a href="">Tumblr</a>
+                </div>
+                <div class="articoliPromozionali">
+                  <div>ARTICOLI PROMOZIONALI</div>
+                  <a href="">Materiale di The Sims</a>
+                  <a href="">Fai un regalo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="compraMenu">
+        <div id="rWrapper">Compra The Sims™ 4</div>
+        <div class="dropdownCompraMenu">
+          <div class="wrapperCompraMenu">
+            <a href="">EA app per Windows</a>
+            <a href="">Origin per Mac</a>
+            <a href="">Steam</a>
+            <a href="">Xbox</a>
+            <a href="">PlayStation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="firstSection">
+
+      <div class="firstSWrapper">
+        <div class="title">
+          <img id="firstSectionLogo" src="assets/img/adaptive-logo-center.png.adapt.crop16x9.767w.png" alt="">
+          <h1> <strong>STAY UP IN THE SIMS™</strong></h1>
+          <h3>Lasciati illuminare dalla luna ed esplora chi sei appena fa buio.</h3>
+          <a href="" class="compraButton">Compra The Sims™ 4</a>
+        </div>
+      </div>
+
+      <div class="secondSWrapper">
+        <div class="testo">
+          <h2>IMPOSSESSATI DELLA NOTTE</h2>
+          <h3>Il divertimento inizia al calar del sole. Che tu voglia metterti in ghingheri per un appuntamento
+            importante, creare ricordi in cortile o semplicemente imperversare, questa stagione farai le ore piccole!
+          </h3>
+        </div>
+
+        <div class="treCard">
+          <div class="firstCard">
+            <a href="" class="firstCardLink">
+              <img src="assets/img/firstCard.jpg.adapt.crop16x9.652w.jpg" alt="">
+              <h3>APPENA USCITO!</h3>
+              <h2>Serate chic fuori</h2>
+              <span>Scopri i Dettagli</span>
+            </a>
+          </div>
+          <div class="secondCard">
+            <a href="" class="secondCardLink">
+              <img src="assets/img/secondCard.jpg.adapt.crop16x9.652w.jpg" alt="">
+              <h3>APPENA USCITO!</h3>
+              <h2>Serate comode dentro</h2>
+              <span>Scopri i Dettagli</span>
+            </a>
+          </div>
+          <div class="thirdCard">
+            <a href="" class="thirdCardLink">
+              <img src="assets/img/thirdCard.jpg.adapt.crop16x9.652w.jpg" alt="">
+              <h3>IMMINENTE</h3>
+              <h2>Sbizzarrisciti</h2>
+              <span>Prenota ora</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="secondSection">
+
+      <div class="secondSectionWrapper">
+        <img id="secondSectionLogo" src="assets/img/secondSectionLogo767w.png" alt="Logo">
+        <h3>Approfitta della tua trasformazione.</h3>
+        <div class="twoButton">
+          <a href="" id="scopriDettagli">Scopri i dettagli</a>
+          <a href="" id="prenotaOra">Prenota ora</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="thirdSection">
+      <div class="thirdSectionWrapper">
+        <h2 id="titleThirdSection">SEI TU A CREARE THE SIMS</h2>
+        <p>Festeggiamo te e tutti gli altri giocatori della nostra comunità! Unisciti alla festa e fai la conoscenza di
+          alcuni dei Simmini che stanno facendo la differenza in gioco e comunità. In più, nomina i meritevoli di
+          riconoscimento.</p>
+        <div class="buttonsThirdSection">
+          <a href="" id="faiConoscenza">Fai conoscenza dei giocatori</a>
+          <a href="" id="festeggia">Festeggia il Mese del Pride</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="fourthSection">
+
+      <div id="firstSection">
+
+        <div id="descriptionSection">
+          <img id="logoSims4"
+            src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/images/2021/05/ts4-adaptive-logo-center-aligned-ts4-light-xl-7x2-lg-5x2-md-2x1.png.adapt.crop16x9.320w.png">
+          <h1>GIOCA CON LA VITA</h1>
+          <p>The Sims 4 è il simulatore di vita che ti conferisce il potere di creare e controllare le persone. Scopri
+            la creatività, l'umorismo, la spensieratezza e la libertà di giocare con la vita in The Sims 4. Prova la
+            demo di "Crea un Sim" per creare il tuo Sim!</p>
+          <a href="" class="compraButton">Compra The Sims™ 4</a>
+        </div>
+        <div id="cardsFourthSection">
+          <!-- Prima card -->
+          <div class="fourth-Section-Card">
+            <div class="wrapperCard">
+              <img
+                src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/images/2021/05/ts4-tile-evergreen-210517-01.jpg.adapt.crop16x9.652w.jpg"
+                alt="">
+              <h3>Crea, esplora e scopri</h3>
+              <p>The Sims 4 è il simulatore di vita che ti conferisce il potere di creare e controllare persone. Scopri
+                la
+                creatività, l'umorismo, la spensieratezza e la libertà di giocare con la vita.</p>
+            </div>
+            <a href=""> Demo di "Crea un Sim"</a>
+          </div>
+          <!-- Second Card -->
+          <div class="fourth-Section-Card">
+            <div class="wrapperCard">
+              <img
+                src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/images/2021/05/ts4-tile-evergreen-210517-01.jpg.adapt.crop16x9.652w.jpg"
+                alt="">
+              <h3>Espandi il gioco</h3>
+              <p>Aumenta la creatività, l'umorismo e la libertà in The Sims 4 aggiungendo nuovi pacchetti al gioco!</p>
+            </div>
+            <a href=""> Esplora i pacchetti </a>
+          </div>
+          <!-- Terza Card -->
+          <div class="fourth-Section-Card">
+            <div class="wrapperCard">
+              <img
+                src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/images/2021/05/ts4-tile-evergreen-210517-01.jpg.adapt.crop16x9.652w.jpg"
+                alt="">
+              <h3>Raccogli e risparmia</h3>
+              <p>Crea una raccolta personalizzata di The Sims 4 che includa i tuoi pacchetti preferiti.</p>
+            </div>
+            <a href=""> Crea la tua raccolta</a>
+          </div>
+        </div>
+      </div>
+      <div id="whiteLine"></div>
+
+      <div id="secondSection">
+
+        <div id="links">
+          <a href="" id="ultime-notizie">Ultime Notizie</a>
+          <a href="">Note Sugli Aggiornamenti</a>
+          <a href="">La Galleria</a>
+        </div>
+
+        <div id="second-section-form">
+          <div id="titolo-paragrafo">
+            <h1>TIENITI AL PASSO CON LE E-MAIL SU EA E THE SIMS</h1>
+            <p>Iscriviti oggi stesso per ricevere tramite e-mail i più recenti aggiornamenti, notizie, contenuti dietro
+              le quinte, offerte esclusive e molto altro su The Sims (come pure su altri prodotti, notizie, eventi e
+              promozioni di EA).</p>
+          </div>
+          <div id="form">
+            <form action="" id="mailForm">
+              <input id="mail" type="email" placeholder="E-mail">
+              <div id="data-paese">
+                <input id="data_nascita" placeholder="Data di nascita">
+                <select id="paese">
+                  <option value="ita">Stati Uniti</option>
+                  <option value="100$">Belgio</option>
+                  <option value="200$">Italia</option>
+                  <option value="300$">Francia</option>
+                </select>
+              </div>
+              <div id="checkbox-paragrafo">
+                <input type="checkbox" name="" id="check-privacy">
+                <p>Posso disiscrivermi in qualsiasi momento modificando le mie preferenze sulle e-mail, contattando
+                  privacyadmin.ea.com o scrivendo a Electronic Arts Inc., ATTN: Email Opt-Out, 209 Redwood Shores Pkwy,
+                  Redwood City, CA, 94065, USA.</p>
+              </div>
+              <a href="" class="compraButton">Iscriviti</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fifthSection">
+      <div class="fifthSectionWrapper">
+
+        <img src="assets/img/playProLogo.svg" alt="" id="playProLogo">
+
+        <p id="fifthSectionParagraph">Gli abbonati a EA Play Pro ottengono i più recenti titoli per PC di EA giorni
+          prima di chiunque altro. Nessuna prova, nessuna interruzione: puoi accedere liberamente ai giochi per tutta la
+          durata del tuo abbonamento. In più, puoi tuffarti negli oltre 100 titoli della nostra raccolta di giochi per
+          PC in continuo aumento e avvalerti del 10% di sconto…</p>
+
+        <a href="" id="iscrivitiEa">Iscriviti a EA Play Pro</a>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section id="firstSectionFooter">
+      <div id="esploraTheSims">
+        <div id="title3Link">
+          <h3><strong> ESPLORA THE SIMS </strong></h3>
+          <div id="treLink">
+            <a href="">The Sims 4</a>
+            <a href="">The Sims Mobile</a>
+            <a href="">The Sims FreePlay</a>
+          </div>
+        </div>
+        <div id="icoSocial">
+          <img class="svgIcoSocial" src="https://img.icons8.com/fluency-systems-filled/48/000000/facebook-f.png" />
+          <img class="svgIcoSocial" src="https://img.icons8.com/ios-glyphs/480/000000/youtube-play.png" />
+          <img class="svgIcoSocial" src="https://img.icons8.com/material-outlined/192/000000/instagram-new--v1.png" />
+          <img class="svgIcoSocial" src="https://img.icons8.com/ios-glyphs/480/000000/twitter--v1.png" />
+        </div>
+      </div>
+
+      <div id="iconeFooter">
+        <div id="icosx">
+          <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/common/maxis-logo-footer-1.svg">
+          <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/PC/common/ts4-home-hero-nav-logo.svg">
+        </div>
+        <div id="icodx">
+          <img id="pegi12"
+            src="https://cdn.mcr.ea.com/4/images/4-6064e83c884cd462fea6818d91f8e340/1591122526-0x0-0-0.svg">
+          <img id="violenza"
+            src="https://cdn.mcr.ea.com/4/images/4-386639f62a489289add35a4d3d9c20fa/1592850595-0x0-0-0.svg">
+          <img id="sesso"
+            src="https://cdn.mcr.ea.com/4/images/4-836711307a683093032a7e3903870ac5/1592850519-0x0-0-0.svg">
+        </div>
+
+      </div>
+    </section>
+
+    <section id="secondSectionFooter">
+      <div>
+        <img id="logoEaFooter" src="https://media.contentapi.ea.com/content/dam/eacom/it-it/common/october-ea-ring.png">
+      </div>
+      <div id="wrapperFooter">
+        <div id="wrapperSelect">
+          <div id="simsLinks">
+            <a href="">LIBRERIA DEI GIOCHI</a>
+            <a href="">REGISTRATI</a>
+            <a href="">ORIGIN</a>
+            <a href="">INFORMAZIONI</a>
+            <a href="">ACCESSIBILITA</a>
+            <a href="">AIUTO</a>
+          </div>
+          <div id="twoSelect">
+            <div id="firstSelect">
+              <select name="prezzi" id="prezziRegionali">
+                <option>Prezzi Regionali</option>
+                <option>Italia</option>
+                <option>Austria</option>
+                <option>.....</option>
+              </select>
+            </div>
+            <div id="secondSelect">
+              <select name="Lingua" id="Lingua">
+                <option>Lingua</option>
+                <option>México</option>
+                <option>Nederland</option>
+                <option>Norge</option>
+                <option>简体中文</option>
+                <option>대한민국</option>
+                <option>.......</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div id="">
+          <div id="privacyLinks">
+            <a href="">Note legali e privacy</a>
+            <a href="">Note legali e privacy</a>
+            <a href="">Politica sulla privacy e sui cookie (i tuoi diritti sulla privacy)</a>
+            <a href="">Aggiornamenti sui servizi online</a>
+            <a href="">Termini di servizio di YouTube</a>
+            <a href="">Norme sulla privacy di Google</a>
+            <a href="">Cookie Preferenze</a>
+            <span>© 2022 Electronic Arts Inc.</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementsById("navbar").style.top = "45px";
+      } else {
+        document.getElementById("navbar").style.top = "-45px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+
+  <script>
+    function chiudiMenu() {
+      let element = document.getElementById("wrapperMenu");
+      let element2 = document.getElementById("sfondo-hamburger")
+      element.classList.add("chiudiMenu");
+      element.classList.remove("apriMenu")
+      element2.classList.remove("apriMenu")
+      element2.classList.add("chiudiMenu")
+    }
+
+    function apriMenu() {
+      let element = document.getElementById("wrapperMenu")
+      let element2 = document.getElementById("sfondo-hamburger")
+      element.classList.remove("chiudiMenu")
+      element.classList.add("apriMenu")
+      element2.classList.remove("chiudiMenu")
+      element2.classList.add("apriMenu")
+    }
+  </script>
 </body>
+
 </html>
