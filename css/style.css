@@ -52,6 +52,7 @@ body div.sticky-bar {
 }
 body div.sticky-bar header {
   height: 40px;
+  transition: 100ms;
 }
 body div.sticky-bar header section {
   display: flex;
@@ -74,6 +75,112 @@ body div.sticky-bar header section a:nth-child(3),
 body div.sticky-bar header section span:nth-child(3) {
   fill: #797979;
   padding: 4px 0;
+}
+body div.sticky-bar header section a div.megamenu,
+body div.sticky-bar header section span div.megamenu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: calc(0% + 40px);
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 22, 22, 0.2941176471);
+  z-index: 1;
+  transition: 300ms;
+  transform-origin: top;
+  transform: scaleY(0);
+  cursor: default;
+}
+body div.sticky-bar header section a div.megamenu.show,
+body div.sticky-bar header section span div.megamenu.show {
+  transform: scaleY(1);
+}
+body div.sticky-bar header section a div.megamenu div.first-half,
+body div.sticky-bar header section span div.megamenu div.first-half {
+  flex: 0 0 400px;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+body div.sticky-bar header section a div.megamenu div.first-half h3,
+body div.sticky-bar header section span div.megamenu div.first-half h3 {
+  font-size: 1.1rem;
+  letter-spacing: -0.5px;
+}
+body div.sticky-bar header section a div.megamenu div.first-half div.grid,
+body div.sticky-bar header section span div.megamenu div.first-half div.grid {
+  display: grid;
+  width: 80%;
+  min-width: 200px;
+  max-width: 700px;
+  grid-template-columns: repeat(2, 1fr);
+}
+body div.sticky-bar header section a div.megamenu div.first-half div.grid a,
+body div.sticky-bar header section span div.megamenu div.first-half div.grid a {
+  font-size: 0.8rem;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 300ms;
+}
+body div.sticky-bar header section a div.megamenu div.first-half div.grid a img,
+body div.sticky-bar header section span div.megamenu div.first-half div.grid a img {
+  width: 50px;
+}
+body div.sticky-bar header section a div.megamenu div.first-half div.grid a:hover,
+body div.sticky-bar header section span div.megamenu div.first-half div.grid a:hover {
+  transform: translateY(-10px);
+}
+@media screen and (max-width: 550px) {
+  body div.sticky-bar header section a div.megamenu div.first-half div.grid,
+body div.sticky-bar header section span div.megamenu div.first-half div.grid {
+    grid-template-columns: 1fr;
+    width: 60%;
+  }
+  body div.sticky-bar header section a div.megamenu div.first-half div.grid a,
+body div.sticky-bar header section span div.megamenu div.first-half div.grid a {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  body div.sticky-bar header section a div.megamenu div.first-half div.grid a p,
+body div.sticky-bar header section span div.megamenu div.first-half div.grid a p {
+    margin-left: 10px;
+  }
+}
+body div.sticky-bar header section a div.megamenu div.first-half span,
+body div.sticky-bar header section span div.megamenu div.first-half span {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  min-width: 220px;
+  max-width: 80%;
+  width: auto;
+  height: auto;
+  font-size: 0.8rem;
+}
+body div.sticky-bar header section a div.megamenu div.first-half span a.span-anchor,
+body div.sticky-bar header section span div.megamenu div.first-half span a.span-anchor {
+  display: inline;
+  height: auto;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  color: #ff4747;
+}
+body div.sticky-bar header section a div.megamenu div.last-half,
+body div.sticky-bar header section span div.megamenu div.last-half {
+  flex: 1 0 0;
 }
 body div.sticky-bar nav {
   height: 56px;
