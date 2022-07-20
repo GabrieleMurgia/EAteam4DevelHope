@@ -1,0 +1,114 @@
+.button-click {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid  #878787;
+  padding: 10px 20px;
+  min-width: 160px;
+  border-top: 3px solid #181818;
+  position: relative;
+  bottom: -1px;
+  cursor: pointer;
+  padding: 11px 21px;
+  margin: -2px -1px;
+}
+
+.button-click .spik {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.button-click .spik .container-arrow {
+  position: relative;
+  top: 1px;
+}
+
+.button-click .spik .arrow {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-top: 1.5px solid white;
+  border-left: 1.5px solid white;
+  left: 12px;
+  top: 10px;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-transform: rotate(315deg) scaleX(-1);
+          transform: rotate(315deg) scaleX(-1);
+}
+
+#spik2 {
+  display: none;
+}
+
+.upper-lang {
+  position: absolute;
+  bottom: 108px;
+  right: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+  background-color: #181818;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #878787;
+}
+
+.upper-lang span {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.upper-lang span:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+.upper-lang span:hover::after {
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#hide {
+  display: none;
+}
+
+@media only screen and (max-width: 982px) {
+  /* .upper-lang.second-lang{
+        right: 263px !important;
+    }
+    .upper-lang{
+        bottom: -5204px;
+    }
+    .second-lang{
+        right: 301px !important;
+    }
+    .upper-lang.first-lang{
+        right: 300px !important;
+    } */
+  .button-and-lang1 {
+    position: relative;
+    height: 109px;
+  }
+  .button-and-lang2 {
+    position: relative;
+    height: 109px;
+  }
+  #button-region {
+    right: 56px;
+  }
+}
+/*# sourceMappingURL=events.css.map */
