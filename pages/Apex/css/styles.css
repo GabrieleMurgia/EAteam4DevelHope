@@ -1,0 +1,431 @@
+@import url(https://fonts.googleapis.com/css?family=Teko);
+@import url(reset.css);
+@font-face {
+  font-family: "TTLakesCondensed-Regular";
+  src: url("../assets/fonts/TT-Lakes-Condensed-Regular.woff2");
+}
+.ea-navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: rgb(22, 22, 22);
+  transition: all ease 0.1s;
+}
+.ea-navbar div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.ea-navbar div svg {
+  color: #7c7c7c;
+}
+.ea-navbar div svg:hover {
+  color: white;
+}
+.ea-navbar a {
+  margin-right: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ea-navbar a svg {
+  color: #7c7c7c;
+}
+.ea-navbar a svg:hover {
+  color: #a3a3a3;
+}
+
+.apex-navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  font-family: "Teko", sans-serif;
+  position: fixed;
+  z-index: 999;
+  top: 40px;
+  transition: all ease 0.1s;
+}
+.apex-navbar #menu-principale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.apex-navbar #menu-principale #logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-left: 48px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.apex-navbar #menu-principale #wrapper-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-start;
+  gap: 25px;
+}
+.apex-navbar #menu-principale #wrapper-menu #informazioni {
+  margin-left: 30px;
+}
+.apex-navbar #menu-principale #wrapper-menu div {
+  color: white;
+  font-size: 23px;
+  font-weight: 200;
+  letter-spacing: -0.5px;
+  cursor: pointer;
+}
+.apex-navbar #wrapper-scarica {
+  width: 228px;
+  height: 44px;
+  background-color: rgb(218, 41, 42);
+  margin-right: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+.apex-navbar #wrapper-scarica span {
+  font-family: "TTLakesCondensed-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 85%;
+  color: white;
+  height: auto;
+}
+
+.spacer-navbar {
+  width: 100%;
+  height: 96px;
+}
+
+.apex-trailer-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.apex-trailer-wrapper .apex-div-trailer {
+  width: 100%;
+  padding-bottom: 50%;
+  position: relative;
+}
+.apex-trailer-wrapper .apex-div-trailer picture {
+  width: 100%;
+}
+.apex-trailer-wrapper .apex-div-trailer picture img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.apex-trailer-wrapper #trailer-main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 12% 7% 10%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  color: #fff;
+  position: relative;
+  gap: 15px;
+}
+.apex-trailer-wrapper #trailer-main div {
+  font-family: "TTLakesCondensed-Regular", sans-serif;
+  font-size: 18px;
+}
+
+#trailer-button-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+#trailer-button-wrapper div {
+  width: 100%;
+  height: 44px;
+  background-color: rgb(218, 41, 42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all ease 0.3s;
+}
+#trailer-button-wrapper div:hover {
+  width: calc(100% + 10px);
+  height: 54px;
+}
+#trailer-button-wrapper div span {
+  font-family: "TTLakesCondensed-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 85%;
+  color: white;
+  height: auto;
+}
+
+.apex-learn-more-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.apex-learn-more-wrapper .apex-div-learn-more {
+  width: 100%;
+  padding-bottom: 50%;
+  position: relative;
+}
+.apex-learn-more-wrapper .apex-div-learn-more picture {
+  width: 100%;
+}
+.apex-learn-more-wrapper .apex-div-learn-more picture img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.apex-learn-more-wrapper #learn-more-main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 12% 7% 4%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  color: #fff;
+  position: relative;
+  gap: 15px;
+}
+.apex-learn-more-wrapper #learn-more-main div:first-child {
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+}
+.apex-learn-more-wrapper #learn-more-main div,
+.apex-learn-more-wrapper #learn-more-main div > span {
+  font-family: "TTLakesCondensed-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+#learn-more-button-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+#learn-more-button-wrapper div {
+  width: 100%;
+  height: 44px;
+  background-color: rgb(218, 41, 42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all ease 0.3s;
+}
+#learn-more-button-wrapper div:hover {
+  width: calc(100% + 10px);
+  height: 54px;
+}
+#learn-more-button-wrapper div span {
+  font-family: "TTLakesCondensed-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 85%;
+  color: white;
+  height: auto;
+}
+
+.apex-latest-news-wrapper {
+  width: 100%;
+  position: relative;
+}
+.apex-latest-news-wrapper .apex-div-latest-news {
+  width: 100%;
+  padding-bottom: 50%;
+  position: relative;
+}
+.apex-latest-news-wrapper .apex-div-latest-news picture {
+  width: 100%;
+}
+.apex-latest-news-wrapper .apex-div-latest-news picture img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.apex-latest-news-wrapper #latest-news-main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  padding: 5% 7% 10%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 6;
+  color: #fff;
+  background-color: #e5e1d8;
+}
+.apex-latest-news-wrapper #latest-news-main div:first-child {
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  color: black;
+}
+.apex-latest-news-wrapper #latest-news-main #mobile-cards-spacer {
+  background-color: rgb(218, 41, 42);
+  width: 100%;
+  height: 7px;
+  margin: 20px 0px;
+}
+.apex-latest-news-wrapper #latest-news-main .card-wrapper {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.apex-latest-news-wrapper #latest-news-main .card-wrapper .news-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.apex-latest-news-wrapper #latest-news-main .card-wrapper .news-card:focus {
+  outline: solid black 4px;
+}
+.apex-latest-news-wrapper #latest-news-main .card-wrapper .news-card .card-img {
+  width: 100%;
+}
+.apex-latest-news-wrapper #latest-news-main .card-wrapper .news-card .card-body {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom: 7px rgb(218, 41, 42) solid;
+  padding: 5.5%;
+}
+.apex-latest-news-wrapper #latest-news-main .card-wrapper .news-card .card-body span {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+.apex-latest-news-wrapper #latest-news-main .card-wrapper .news-card .card-body span:first-of-type {
+  margin-top: 0.15em;
+  color: rgb(218, 41, 42);
+}
+.apex-latest-news-wrapper #latest-news-main .card-wrapper .news-card .card-body span:last-of-type {
+  color: white;
+  margin-top: 0.35em;
+}
+.apex-latest-news-wrapper #latest-news-main .card-wrapper .news-card .card-body h3 {
+  text-align: left;
+  font-family: "TTLakesCondensed-Regular";
+  font-weight: bold;
+  font-size: 21px;
+  color: white;
+  margin-top: 0.35em;
+}
+.apex-latest-news-wrapper #latest-news-main .card-wrapper .news-card .card-body div:first-of-type {
+  text-align: left;
+  font-family: "TTLakesCondensed-Regular";
+  font-size: 16px;
+  color: white;
+  margin-top: 0.55em;
+}
+.apex-latest-news-wrapper #latest-news-main .card-wrapper .news-card .card-body div:last-of-type {
+  width: 100%;
+  height: 2em;
+}
+
+@media (min-width: 768px) {
+  #trailer-main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    left: 0;
+    padding: 9% 50% 0 10%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+    color: #fff;
+    position: absolute;
+  }
+
+  .apex-div-trailer img {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-left div#trailer-main {
+    padding: 9% 10% 0 50%;
+  }
+
+  .apex-trailer-wrapper.hero-left .apex-div-trailer {
+    padding-bottom: 50%;
+  }
+
+  .apex-squad img {
+    width: 100%;
+  }
+
+  .apex-squad-body {
+    display: flex;
+  }
+
+  .apex-squad-body > div {
+    flex: 0 0 50%;
+  }
+
+  .apex-squad {
+    padding: 80px 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .apex-trailer-wrapper.hero-left .apex-div-trailer {
+    padding-bottom: 41.5%;
+  }
+
+  .hero-left .apex-div-trailer img {
+    max-height: 549px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
